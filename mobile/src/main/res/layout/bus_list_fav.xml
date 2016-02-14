@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f45e5e"
+    android:orientation="horizontal">
+
+    <ListView
+        android:id="@+id/busListFavView"
+        android:layout_width="fill_parent"
+        android:layout_height="650dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayoutMenu">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.5"
+        android:background="#fff">
+
+
+        <ImageView
+            android:id="@+id/screenTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:src="@drawable/fav_icon">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/routeString"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_weight=".3"
+            android:background="#f45e5e"
+            android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:text="STOP"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/destinationString"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/routeString"
+            android:layout_alignBottom="@+id/routeString"
+            android:layout_toRightOf="@+id/routeString"
+            android:layout_weight=".7"
+            android:background="#f45e5e"
+            android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:text="LOCATION"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Onit</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">impru.</string>
+    <string name="swipe">Swipe to begin>>></string>
+    <string name="login">Login</string>
+    <string name="signup">Get Started</string>
+    <string name="email">Email</string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint"></string>
+    <string name="passwordHint1">Password</string>
+    <string name="logocontent">Impruv logo</string>
+    <string name="placeholder">PLACEHOLDER</string>
+    <string name="title_activity_song_selection">SongSelection</string>
+    <string name="title_activity_difficulty_select">DifficultySelect</string>
+</resources>

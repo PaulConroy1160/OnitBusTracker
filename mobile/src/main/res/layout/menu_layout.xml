@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLatout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/firstRow"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/secondRow"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <ImageButton
+            android:id="@+id/arcadeBTN"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/flat_orange_selector"
+            android:onClick="startTransition"
+            android:src="@drawable/bus" />
+
+        <ImageButton
+            android:id="@+id/challengeButton"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/flat_green_selector"
+            android:src="@drawable/alarm" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newsFeed"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <ImageButton
+            android:id="@+id/leaderBoardBTN"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/flat_blue_selector"
+            android:src="@drawable/fav" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/flat_red_selector" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newsFeed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:alpha=".5"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/newsText"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/placeholder"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/transistion"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/playtransistion"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/transistion2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/playtransistionscreen2"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+
